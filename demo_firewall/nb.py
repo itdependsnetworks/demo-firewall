@@ -151,7 +151,7 @@ def generate_config(device):
 
     job = nb.extras.jobs.get(**{"module_name": "nautobot_firewall_models.jobs", "job_class_name": "RunCapircaJob"})
       
-    job_result = nb.extras.jobs.run(
+    job_result = nb.extras.run_and_wait.run(
         job_id=str(job.id),
         data={"device": [str(device.id)]},
         commit=True,
