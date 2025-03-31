@@ -1,0 +1,2595 @@
+{
+  "from": 1,
+  "to": 18,
+  "total": 18,
+  "name": "Network",
+  "uid": "21127e7c-d19b-4c65-b9c3-8e20e66ea1ae",
+  "rulebase": [
+    {
+      "uid": "f47b1a2e-8c3d-4e5f-9b7a-1c2d3e4f5a6b",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "All-To-Phantom",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Phantom",
+            "name": "Check Point Data",
+            "uid": "f47b1a2e-8c3d-4e5f-9b7a-1c2d3e4f5a6b",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "phantom-111-TCP",
+            "name": "Check Point Data",
+            "uid": "4a9d8c7b-2e0f-1d3c-0b1a-5c6d7e8f9a0c",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "phantom-2049",
+            "name": "Check Point Data",
+            "uid": "3e8c7b6a-1f0d-2c3b-0a9e-4d5c6b7e8f9a",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "phantom-5432",
+            "name": "Check Point Data",
+            "uid": "2d7b6a59-0e9c-1f2a-3b8d-5c6e7f8a9d0b",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "phantom-8089",
+            "name": "Check Point Data",
+            "uid": "1c6a5948-0d8b-2e1f-3a7c-6d5e8f9b0c1a",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "Phantom-27100-27200",
+            "name": "Check Point Data",
+            "uid": "5b0e9d8c-3f1a-2e0b-1c2d-4a5b6c7d8e9f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8089",
+            "name": "Check Point Data",
+            "uid": "c8d7e6f5-a4b3-4c2d-1e0f-9b8a7c6d5e4f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 1,
+      "type": "rule"
+    },
+    {
+      "uid": "d9e8f7c6-b5a4-4d3e-2f1c-0a9b8d7e6c5f",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "PA",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "PA",
+            "name": "Check Point Data",
+            "uid": "6c1f0e9d-4a2b-3f1c-0d2e-3b4c5a6e7f8d",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 2,
+      "type": "rule"
+    },
+    {
+      "uid": "c8d7e6f5-a4b3-4c2d-1e0f-9b8a7c6d5e4f",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "Cent-In",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "CentOS-1",
+            "name": "Check Point Data",
+            "uid": "9f4a3b2c-7d0e-4c1b-3e2f-6a5b4c3d8e9f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "CentOS-2",
+            "name": "Check Point Data",
+            "uid": "8e3f2a1b-6c0d-4b2e-1f3c-5d4e3f2a9b8c",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "service-http",
+            "name": "Check Point Data",
+            "uid": "f47b1a2e-8c3d-4e5f-9b7a-1c2d3e4f5a6b",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "service-https",
+            "name": "Check Point Data",
+            "uid": "d9e8f7c6-b5a4-4d3e-2f1c-0a9b8d7e6c5f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 3,
+      "type": "rule"
+    },
+    {
+      "uid": "b7c6d5e4-9f2a-4b1c-0d3e-8a9b7c6d5f4e",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "DNS_Out",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 4,
+      "type": "rule"
+    },
+    {
+      "uid": "a6b5c4d3-8e1f-4a0b-2c3d-7e8f9a6b5c4d",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "DNS_NTP_Allto2008",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Windows2008",
+            "name": "Check Point Data",
+            "uid": "b7c6d5e4-9f2a-4b1c-0d3e-8a9b7c6d5f4e",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 5,
+      "type": "rule"
+    },
+    {
+      "uid": "9f4a3b2c-7d0e-4c1b-3e2f-6a5b4c3d8e9f",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "Google-DNS",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Google-DNS-1",
+            "name": "Check Point Data",
+            "uid": "5b0e9d8c-3f1a-2e0b-1c2d-4a5b6c7d8e9f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "Google-DNS-2",
+            "name": "Check Point Data",
+            "uid": "4a9d8c7b-2e0f-1d3c-0b1a-5c6d7e8f9a0b",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 6,
+      "type": "rule"
+    },
+    {
+      "uid": "8e3f2a1b-6c0d-4b2e-1f3c-5d4e3f2a9b8c",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "Splunk-Out",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Splunk",
+            "name": "Check Point Data",
+            "uid": "a6b5c4d3-8e1f-4a0b-2c3d-7e8f9a6b5c4d",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "splunk7000",
+            "name": "Check Point Data",
+            "uid": "8e3f2a1b-6c0d-4b2e-1f3c-5d4e3f2a9b8c",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk7070",
+            "name": "Check Point Data",
+            "uid": "6c1f0e9d-4a2b-3f1c-0d2e-3b4c5a6e7f8d",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "Splunk8000",
+            "name": "Check Point Data",
+            "uid": "b7c6d5e4-9f2a-4b1c-0d3e-8a9b7c6d5f4e",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8008",
+            "name": "Check Point Data",
+            "uid": "7d2e1f0a-5b3c-4a0d-2e1f-4c3b2a1e9f8d",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8065",
+            "name": "Check Point Data",
+            "uid": "a6b5c4d3-8e1f-4a0b-2c3d-7e8f9a6b5c4d",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8089",
+            "name": "Check Point Data",
+            "uid": "c8d7e6f5-a4b3-4c2d-1e0f-9b8a7c6d5e4f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8191",
+            "name": "Check Point Data",
+            "uid": "9f4a3b2c-7d0e-4c1b-3e2f-6a5b4c3d8e9f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 7,
+      "type": "rule"
+    },
+    {
+      "uid": "7d2e1f0a-5b3c-4a0d-2e1f-4c3b2a1e9f8d",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "PING",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 8,
+      "type": "rule"
+    },
+    {
+      "uid": "6c1f0e9d-4a2b-3f1c-0d2e-3b4c5a6e7f8d",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "PhantomOutWeb",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Phantom",
+            "name": "Check Point Data",
+            "uid": "f47b1a2e-8c3d-4e5f-9b7a-1c2d3e4f5a6b",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 9,
+      "type": "rule"
+    },
+    {
+      "uid": "5b0e9d8c-3f1a-2e0b-1c2d-4a5b6c7d8e9f",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "All_to_Splunk",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Splunk",
+            "name": "Check Point Data",
+            "uid": "a6b5c4d3-8e1f-4a0b-2c3d-7e8f9a6b5c4d",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "service-http",
+            "name": "Check Point Data",
+            "uid": "f47b1a2e-8c3d-4e5f-9b7a-1c2d3e4f5a6b",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "service-https",
+            "name": "Check Point Data",
+            "uid": "d9e8f7c6-b5a4-4d3e-2f1c-0a9b8d7e6c5f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk7000",
+            "name": "Check Point Data",
+            "uid": "8e3f2a1b-6c0d-4b2e-1f3c-5d4e3f2a9b8c",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk7070",
+            "name": "Check Point Data",
+            "uid": "6c1f0e9d-4a2b-3f1c-0d2e-3b4c5a6e7f8d",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "Splunk8000",
+            "name": "Check Point Data",
+            "uid": "b7c6d5e4-9f2a-4b1c-0d3e-8a9b7c6d5f4e",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8008",
+            "name": "Check Point Data",
+            "uid": "7d2e1f0a-5b3c-4a0d-2e1f-4c3b2a1e9f8d",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8065",
+            "name": "Check Point Data",
+            "uid": "a6b5c4d3-8e1f-4a0b-2c3d-7e8f9a6b5c4d",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8089",
+            "name": "Check Point Data",
+            "uid": "c8d7e6f5-a4b3-4c2d-1e0f-9b8a7c6d5e4f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "splunk8191",
+            "name": "Check Point Data",
+            "uid": "9f4a3b2c-7d0e-4c1b-3e2f-6a5b4c3d8e9f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 10,
+      "type": "rule"
+    },
+    {
+      "uid": "4a9d8c7b-2e0f-1d3c-0b1a-5c6d7e8f9a0a",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "UbuntuOutWeb",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Ubuntu",
+            "name": "Check Point Data",
+            "uid": "c8d7e6f5-a4b3-4c2d-1e0f-9b8a7c6d5e4f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 11,
+      "type": "rule"
+    },
+    {
+      "uid": "3e8c7b6a-1f0d-2c3b-0a9e-4d5c6b7e8f9a",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "DebianOutWeb",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Debian",
+            "name": "Check Point Data",
+            "uid": "d9e8f7c6-b5a4-4d3e-2f1c-0a9b8d7e6c5f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 12,
+      "type": "rule"
+    },
+    {
+      "uid": "2d7b6a59-0e9c-1f2a-3b8d-5c6e7f8a9d0b",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "WebForAll",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "service-http",
+            "name": "Check Point Data",
+            "uid": "f47b1a2e-8c3d-4e5f-9b7a-1c2d3e4f5a6b",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "service-https",
+            "name": "Check Point Data",
+            "uid": "d9e8f7c6-b5a4-4d3e-2f1c-0a9b8d7e6c5f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 13,
+      "type": "rule"
+    },
+    {
+      "uid": "1c6a5948-0d8b-2e1f-3a7c-6d5e8f9b0c1a",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "CentWebOut",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "CentOS-1",
+            "name": "Check Point Data",
+            "uid": "9f4a3b2c-7d0e-4c1b-3e2f-6a5b4c3d8e9f",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 14,
+      "type": "rule"
+    },
+    {
+      "uid": "0b595837-1c7a-2d0e-3f6b-7e8d9a0b1c2d",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "DNS-IN",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Ubuntu",
+            "name": "Check Point Data",
+            "uid": "c8d7e6f5-a4b3-4c2d-1e0f-9b8a7c6d5e4f",
+            "type": "data domain"
+          }
+        },
+        {
+          "domainId": {
+            "nice_name": "Windows2008",
+            "name": "Check Point Data",
+            "uid": "b7c6d5e4-9f2a-4b1c-0d3e-8a9b7c6d5f4e",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 15,
+      "type": "rule"
+    },
+    {
+      "uid": "9e4a3b2c-7d0f-4c1b-3e2f-6a5b4c3d8e9f",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "Fedora-Out",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Fedora",
+            "name": "Check Point Data",
+            "uid": "7d2e1f0a-5b3c-4a0d-2e1f-4c3b2a1e9f8d",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 16,
+      "type": "rule"
+    },
+    {
+      "uid": "8d3f2a1b-6c0e-4b2f-1f3c-5d4e3f2a9b8c",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "SplunkWebOut",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Splunk",
+            "name": "Check Point Data",
+            "uid": "a6b5c4d3-8e1f-4a0b-2c3d-7e8f9a6b5c4d",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 17,
+      "type": "rule"
+    },
+    {
+      "uid": "7c2e1f0a-5b3d-4a0e-2f1f-4c3b2a1e9f8d",
+      "enabled": true,
+      "comments": "",
+      "domain": {
+        "domain-type": "domain",
+        "uid": "41e821a0-3720-11e3-aa6e-0800200c9fde",
+        "name": "SMC User"
+      },
+      "meta-info": {
+        "lock": "unlocked",
+        "validation-state": "ok",
+        "read-only": false,
+        "last-modify-time": {
+          "posix": 1445504073840,
+          "iso-8601": "2015-10-22T11:54+0300"
+        },
+        "last-modifier": "aa",
+        "creation-time": {
+          "posix": 1445245489542,
+          "iso-8601": "2015-10-19T12:04+0300"
+        },
+        "creator": "aa"
+      },
+      "install-on": [
+        {
+          "domainId": {
+            "uid": "a0bbbc99-adef-4ef8-bb6d-defdefdefdef",
+            "name": "Check Point Data",
+            "type": "data domain"
+          },
+          "color": "none",
+          "xmlType": "Global",
+          "uid": "6c488338-8eec-4103-ad21-cd461ac2c476",
+          "folder": {
+            "uid": "a7a569db-cd04-4f1c-bc8d-94dbfc22b150",
+            "name": "Check Point Settings"
+          },
+          "meta-info": {
+            "validation-state": "ok",
+            "last-modify-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "last-modifier": "System",
+            "creation-time": {
+              "posix": 1444711969368,
+              "iso-8601": "2015-10-13T07:52+0300"
+            },
+            "creator": "System"
+          },
+          "tags": [
+
+          ],
+          "name": "Policy Targets",
+          "icon": "General/globalsAny",
+          "comments": "The policy target gateways"
+        }
+      ],
+      "name": "Windows2008Out",
+      "source": [
+        {
+          "domainId": {
+            "nice_name": "Windows2008",
+            "name": "Check Point Data",
+            "uid": "b7c6d5e4-9f2a-4b1c-0d3e-8a9b7c6d5f4e",
+            "type": "data domain"
+          }
+        }
+      ],
+      "source-negate": false,
+      "destination": [
+        {
+          "domainId": {
+            "nice_name": "Any",
+            "name": "Check Point Data",
+            "uid": "Any",
+            "type": "data domain"
+          }
+        }
+      ],
+      "destination-negate": false,
+      "service": [
+        {
+          "domainId": {
+            "nice_name": "application-default",
+            "name": "Check Point Data",
+            "uid": "application-default",
+            "type": "data domain"
+          }
+        }
+      ],
+      "service-negate": false,
+      "vpn": [
+        {
+          "name": "Any"
+        }
+      ],
+      "action": {
+        "name": "Accept",
+        "icon": "Actions/actionsAccept",
+        "comments": "Accept",
+        "display-name": "Accept"
+      },
+      "action-settings": {
+        "enable-identity-captive-portal": false
+      },
+      "data": [
+        {
+          "name": "Any"
+        }
+      ],
+      "data-negate": false,
+      "data-direction": "any",
+      "track": {
+        "name": "Log",
+        "icon": "General/globalsLog",
+        "comments": "Log traffic"
+      },
+      "track-alert": "none",
+      "time": [
+        {
+          "name": "Any"
+        }
+      ],
+      "custom-fields": {
+        "field-1": "",
+        "field-2": "",
+        "field-3": ""
+      },
+      "rule-number": 18,
+      "type": "rule"
+    }
+  ]
+}
