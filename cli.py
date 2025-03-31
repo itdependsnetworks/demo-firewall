@@ -3,6 +3,7 @@ import os
 
 import click
 import demo_firewall
+import demo_firewall.nb
 
 
 @click.group()
