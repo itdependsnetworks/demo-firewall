@@ -1,7 +1,7 @@
 import pynautobot
 import os
 
-NAUTOBOT_URL = os.getenv("NAUTOBOT_URL", "https://demo.nautobot.com:8080")
+NAUTOBOT_URL = os.getenv("NAUTOBOT_URL", "https://demo.nautobot.com")
 NAUTOBOT_TOKEN = os.getenv("NAUTOBOT_TOKEN", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
 
 def publish_data(firewall_data, device):
@@ -15,6 +15,7 @@ def publish_data(firewall_data, device):
     policies = nb.plugins.firewall.policy
     policy_to_device = nb.plugins.firewall.policy_device_association
     devices = nb.dcim.devices
+    platforms = nb.dcim.platforms
     locations = nb.dcim.locations
 
     # Helper function for idempotent creation
@@ -127,13 +128,17 @@ def publish_data(firewall_data, device):
         "policy_rules": rule_ids,
     }
     policy = get_or_create(policies, "name", policy_data)
-    # print(json.dumps(dict(policy), indent=4))
 
     policy_to_device_data = {
         "policy": str(policy.id),
         "device": str(device.id),
     }
     policy_to_device = get_or_create(policy_to_device, "policy", policy_to_device_data, lookup_field="policy")
+
+    palo = platforms.get(**{"name": "Palo Alto"})
+    # Assign the policy to the device
+    palo.network_driver = "paloalto"
+    palo.save()
 
     print("Firewall configuration and policy assignment completed.")
 
